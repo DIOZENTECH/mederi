@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "Contactanos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Mederi Centro Médico</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/bootstrap.min.css">
+    <!-- owlcarousel min css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/owl.carousel.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/slick.css">
+    <!-- slick-theme css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/slick-theme.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/fonts/flaticon.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/font-awesome.min.css">
+    <!-- rsmenu CSS -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/rsmenu-main.css">
+    <!-- rsmenu transitions CSS -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/rsmenu-transitions.css">
+    <!-- offcanvas CSS -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/off-canvas.css">
+    <!-- rsanimations CSS -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/rsanimations.css">
+    <!-- spaceing css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/rs-spaceing.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap_mederi/css/responsive.css">
+</head>
+<body>
+    <div class="rs-contact-part pt-122 pb-130 md-pt-72 md-pb-80 bg14">
+        <div class="container">
+            <div class="content-part text-center">
+                <div class="sec-title mb-50">
+                    <h2 class="title pb-15">Comunícate con Nosotros</h2>
+                </div>
+                <div class="rs-item-part">
+                    <div class="row">
+                        <div class="col-md-4 col-12 sm-mb-30">
+                            <div class="item-address-part">
+                                <div class="icon-part">
+                                    <i class="flaticon-phone"></i>
+                                </div>
+                                <div class="address-text">
+                                    <h3 class="contact-title">Llámanos: </h3>
+                                    <span>099 795 5880</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 sm-mb-30">
+                            <div class="item-address-part">
+                                <div class="icon-part">
+                                    <i class="flaticon-email"></i>
+                                </div>
+                                <div class="address-text">
+                                    <h3 class="contact-title">Escríbenos</h3>
+                                    <a href="mailto:gerenciamedica@saludmederi.com">gerenciamedica@saludmederi.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="item-address-part">
+                                <div class="icon-part">
+                                    <i class="flaticon-location"></i>
+                                </div>
+                                <div class="address-text">
+                                    <h3 class="contact-title">Estamos Ubicados</h3>
+                                    <span>Jorge Rodríguez y Amazonas. Coca, Ecuador</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-appointment">
+                    <div id="form-messages"></div>
+                    <form id="contact-form" method="post" action="mailer.php">
+                        <div class="row">
+                            <div class="col-lg-6 mb-20 col-md-6 col-sm-6">
+                                <input class="from-control" type="text" id="name" name="name" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-lg-6 mb-20 col-md-6 col-sm-6">
+                                <input class="from-control" type="email" id="email" name="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-lg-6 mb-20 col-md-6 col-sm-6">
+                                <input class="from-control" type="text" id="phone_number" name="phone_number" placeholder="Teléfono" required>
+                            </div>
+                            <div class="col-lg-6 mb-20 col-md-6 col-sm-6">
+                                <div class="select-option">
+                                    <select class="from-control" required>
+                                        <option value="">Especialidad</option>
+                                        <option value="">Medicina General</option>
+                                        <option value="">Ginecología</option>
+                                        <option value="">Oftalmología</option>
+                                        <option value="">Psicología</option>
+                                        <option value="">Imagenenología</option>
+                                        <option value="">Medicina Ocupacional</option>
+                                        <option value="">Otros Servicios</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-45">
+                                <textarea class="from-control" id="message" name="message" placeholder=" Su mensaje" required></textarea>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="submit-btn text-center">
+                                    <button type="submit" class="readon jambo">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--rs-contact-part end-->
+    <!--rs-map-part start-->
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.4404248725809!2d-76.98515829738446!3d-0.46782538612102686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d7a50d14f5f5ff%3A0x10632d68c65995ff!2sJorge%20Rodriguez%20%26%20Amazonas%2C%20Francisco%20de%20Orellana!5e0!3m2!1ses-419!2sec!4v1591377208215!5m2!1ses-419!2sec" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    </div>
+    <!--rs-map-part start-->
+
+    <!-- Scrool to Top Start -->
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Scrool to Top End -->
+    <!-- Search Modal Start -->
+    <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="flaticon-cross"></span>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="search-block clearfix">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Search Here.." type="text">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal End -->
+    <!-- modernizr js -->
+    <script src="~/lib/bootstrap_mederi/js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="~/lib/bootstrap_mederi/js/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/lib/bootstrap_mederi/js/bootstrap.min.js"></script>
+    <!-- wow js -->
+    <script src="~/lib/bootstrap_mederi/js/wow.min.js"></script>
+    <!-- rsmenu js -->
+    <script src="~/lib/bootstrap_mederi/js/rsmenu-main.js"></script>
+    <!---owlcarousel.min.js-->
+    <script src="~/lib/bootstrap_mederi/js/owl.carousel.min.js"></script>
+    <!-- counter top js -->
+    <script src="~/lib/bootstrap_mederi/js/jquery.counterup.min.js"></script>
+    <script src="~/lib/bootstrap_mederi/js/waypoints.min.js"></script>
+    <!-- slick.min.js -->
+    <script src="~/lib/bootstrap_mederi/js/slick.min.js"></script>
+    <!-- contact form js -->
+    <script src="~/lib/bootstrap_mederi/js/contact.form.js"></script>
+    <!-- main js -->
+    <script src="~/lib/bootstrap_mederi/js/main.js"></script>
+</body>
+</html>
+
