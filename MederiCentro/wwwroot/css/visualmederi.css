@@ -8,3 +8,33 @@
     margin-top: 0;
     border-radius: 30px;
 }
+
+
+.rs-slider.home4slider .single-slide .desc-part .medical {
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #021b79;
+    margin: 0;
+    font-family: Exo;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.titulo-slider{
+    font-size: 58px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #021b79;
+    margin: 0;
+    font-family: Exo;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.nombre-slider{
+    font-size: 20px;
+    color: #494949;
+    line-height: 29px;
+    font-weight: 400;
+}
