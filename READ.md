@@ -1,3 +1,6 @@
+# DEVELOPER PROFILE
+Professional experience in working with Microsoft technologies like C#, ASP.NET MVC, ASP.NET WEB API, .Net Core / Entity Framework, Microsoft SQL Server, IIS - end development technologies HTML5, CSS3, JavaScript, jQuery, Typescript and Bootstrap framework.
+
 # .NET Core Home
 
 The dotnet/core repository is a good starting point for .NET Core.
